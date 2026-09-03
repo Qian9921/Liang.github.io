@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Liang Qian is a PhD student working on trustworthy learning-based positioning, differentiable optimization, and urban GNSS."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <link rel="canonical" href="https://qian9921.github.io/Liang.github.io/" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Liang Qian — Trustworthy Navigation Research</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Liang Qian, home">
+        <span class="wordmark-mark" aria-hidden="true">LQ</span>
+        <span>Liang Qian</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#work">Work</a>
+        <a href="#journey">Journey</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Light</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PhD student · Hong Kong</p>
+          <h1>I teach navigation systems to <em>doubt themselves.</em></h1>
+          <p class="hero-intro">
+            I’m Liang, a researcher at PolyU’s Intelligent Positioning and Navigation
+            Laboratory. I combine deep learning and differentiable optimization to make
+            urban positioning more accurate—and more honest when it might be wrong.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="mailto:martin.qian@connect.polyu.hk">Say hello</a>
+          </div>
+          <ul class="social-list" aria-label="Profile links">
+            <li><a href="https://scholar.google.com/citations?user=cxEeLdIAAAAJ&amp;hl=en">Google Scholar ↗</a></li>
+            <li><a href="https://hk.linkedin.com/in/liang-qian-a7b49324a">LinkedIn ↗</a></li>
+            <li><a href="https://github.com/Qian9921">GitHub ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="signal-lab" aria-labelledby="signal-title">
+          <div class="lab-topline">
+            <div>
+              <p class="lab-kicker">Live thought experiment</p>
+              <h2 id="signal-title">How confident should we be?</h2>
+            </div>
+            <span class="live-badge">SIMULATION</span>
+          </div>
+
+          <div class="radar" aria-hidden="true">
+            <div class="radar-ring ring-one"></div>
+            <div class="radar-ring ring-two"></div>
+            <div class="radar-ring ring-three"></div>
+            <div class="radar-axis radar-axis-x"></div>
+            <div class="radar-axis radar-axis-y"></div>
+            <div class="uncertainty-ellipse"></div>
+            <span class="satellite sat-one">G08</span>
+            <span class="satellite sat-two">G15</span>
+            <span class="satellite sat-three">C21</span>
+            <span class="satellite sat-four">E03</span>
+            <span class="position-dot"></span>
+          </div>
+
+          <div class="lab-reading" aria-live="polite">
+            <div>
+              <span class="reading-label">Environment</span>
+              <strong id="environment-value">Open sky</strong>
+            </div>
+            <div>
+              <span class="reading-label">Reported confidence</span>
+              <strong id="confidence-value">96%</strong>
+            </div>
+            <div>
+              <span class="reading-label">Estimated error</span>
+              <strong id="error-value">± 0.8 m</strong>
+            </div>
+          </div>
+
+          <label class="canyon-control" for="canyon-slider">
+            <span>Open sky</span>
+            <span>Urban canyon</span>
+          </label>
+          <input
+            id="canyon-slider"
+            type="range"
+            min="0"
+            max="100"
+            value="10"
+            aria-label="Move from open sky to a dense urban canyon"
+          />
+          <p class="lab-note">Move the slider. The honest answer gets wider as the signals get messier.</p>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="section-heading">
+          <p class="section-number">01 / RESEARCH</p>
+          <h2>Accuracy is useful.<br />Knowing when to trust it is better.</h2>
+        </div>
+        <div class="research-grid">
+          <article class="research-card featured-card">
+            <span class="card-index">A</span>
+            <p class="card-label">Trustworthy navigation</p>
+            <h3>Credible uncertainty</h3>
+            <p>
+              Building positioning systems whose confidence reflects the real world—not
+              merely what an optimistic model hopes is true.
+            </p>
+          </article>
+          <article class="research-card">
+            <span class="card-index">B</span>
+            <p class="card-label">Differentiable systems</p>
+            <h3>Learning meets optimization</h3>
+            <p>
+              Connecting neural networks with factor-graph solvers so data-driven models
+              and geometric reasoning can improve each other end to end.
+            </p>
+          </article>
+          <article class="research-card">
+            <span class="card-index">C</span>
+            <p class="card-label">Urban GNSS</p>
+            <h3>Navigation in the messy world</h3>
+            <p>
+              Reasoning about reflected, blocked, and unreliable satellite signals in
+              the places where positioning matters most.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading compact-heading">
+          <p class="section-number">02 / SELECTED WORK</p>
+          <h2>Current signals</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication publication-featured">
+            <div class="publication-meta">
+              <span>2026</span>
+              <span>arXiv preprint</span>
+            </div>
+            <div class="publication-body">
+              <h3>CredibleDFGO: Differentiable Factor Graph Optimization with Credibility Supervision</h3>
+              <p>Liang Qian, Penggao Yan, Penghui Xu, and Li-Ta Hsu</p>
+              <div class="paper-tags" aria-label="Topics">
+                <span>Urban GNSS</span><span>Factor graphs</span><span>Uncertainty</span>
+              </div>
+            </div>
+            <a class="publication-link" href="https://arxiv.org/abs/2605.06100" aria-label="Read CredibleDFGO on arXiv">Read <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="publication">
+            <div class="publication-meta">
+              <span>2024</span>
+              <span>Knowledge tracing</span>
+            </div>
+            <div class="publication-body">
+              <h3>A Double-layer Stacked Gate Recurrent Unit with Self-Attention Residual Model for Knowledge Tracing</h3>
+              <p>Liang Qian and X. Luo</p>
+            </div>
+            <a class="publication-link" href="https://scholar.google.com/citations?user=cxEeLdIAAAAJ&amp;hl=en" aria-label="View publication on Google Scholar">Scholar <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="section-heading compact-heading">
+          <p class="section-number">03 / JOURNEY</p>
+          <h2>From software to signals</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-year">2018—2022</span>
+            <div>
+              <h3>Bachelor’s in Software Engineering</h3>
+              <p>Shaanxi Normal University · Xi’an, China</p>
+            </div>
+          </li>
+          <li>
+            <span class="timeline-year">2022—2024</span>
+            <div>
+              <h3>Master’s in Computer Science</h3>
+              <p>City University of Hong Kong · Hong Kong</p>
+            </div>
+          </li>
+          <li class="timeline-current">
+            <span class="timeline-year">2025—NOW</span>
+            <div>
+              <h3>PhD Student · Positioning &amp; Navigation</h3>
+              <p>The Hong Kong Polytechnic University · IPNL</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact-section">
+        <p class="section-number">04 / CONTACT</p>
+        <div class="contact-copy">
+          <h2>Have a difficult positioning problem?</h2>
+          <p>Good. Those are usually the interesting ones.</p>
+        </div>
+        <a class="contact-link" href="mailto:martin.qian@connect.polyu.hk">
+          martin.qian@connect.polyu.hk <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Liang Qian · Researching where learning, optimization, and navigation meet.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
